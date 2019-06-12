@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-    function endereço() {
+        function formatarEndereço(obj) {
+
+            return "O usuário mora em " + endereço.cidade + ", " + endereço.uf + ", no bairro " + endereço.bairro + ", na rua " + endereço.rua + "com n° " + endereço.numero;
+        }
         var endereço = {
             rua: "Rua dos Pinheiros",
             numero: 1293,
@@ -16,14 +21,12 @@
             cidade: "São Paulo",
             uf: "SP"
         };
-        resultado = "O usuário mora em " + cidade.endereço +", " + uf.endereço + ", no bairro " + bairro.endereço + ", na rua " + rua.endereço + "com n° " + numero.endereço;
-        
-    }
-     
-    
-    
-    
-    
+
+
+        alert(formatarEndereço(endereço))
+
+
     </script>
 </body>
+
 </html>
